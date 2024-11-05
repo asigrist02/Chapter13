@@ -1,4 +1,4 @@
-package com.example.criminalintent
+package com.example.chapter10
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

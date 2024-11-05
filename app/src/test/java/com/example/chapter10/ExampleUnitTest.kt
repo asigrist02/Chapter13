@@ -1,4 +1,4 @@
-package com.example.criminalintent
+package com.example.chapter10
 
 import org.junit.Test
 

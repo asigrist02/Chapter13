@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.criminalintent"
+    namespace = "com.example.chapter10"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.criminalintent"
+        applicationId = "com.example.chapter10"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -52,5 +52,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.activity.ktx)
     androidTestImplementation(libs.junit.jupiter)
-    debugImplementation ("androidx.fragment:fragment-testing:1.4.1")
+    debugImplementation (libs.androidx.fragment.testing)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.fragment.ktx)
     }

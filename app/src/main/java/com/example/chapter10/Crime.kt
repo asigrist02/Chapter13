@@ -1,4 +1,4 @@
-package com.example.criminalintent
+package com.example.chapter10
 
 import java.util.Date
 import java.util.UUID

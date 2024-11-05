@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CriminalIntent"
+rootProject.name = "Chapter10"
 include(":app")
