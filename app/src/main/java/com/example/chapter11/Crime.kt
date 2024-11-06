@@ -1,4 +1,4 @@
-package com.example.chapter10
+package com.example.chapter11
 
 import java.util.Date
 import java.util.UUID
@@ -8,5 +8,4 @@ data class Crime(
     var title:String,
     val date:Date,
     var isSolved:Boolean,
-    var requiresPolice: Boolean = false // EX.2 new prop
 )
