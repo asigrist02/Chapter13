@@ -7,5 +7,6 @@ data class Crime(
     val id:UUID,
     var title:String,
     val date:Date,
-    var isSolved:Boolean
+    var isSolved:Boolean,
+    var requiresPolice: Boolean = false // EX.2 new prop
 )
