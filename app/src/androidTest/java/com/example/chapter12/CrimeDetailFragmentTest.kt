@@ -1,4 +1,4 @@
-package com.example.chapter11
+package com.example.chapter12
 
 import androidx.fragment.app.testing.FragmentScenario
 import androidx.test.espresso.Espresso.onView

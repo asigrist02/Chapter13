@@ -2,14 +2,16 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
+
 }
 
 android {
-    namespace = "com.example.chapter11"
+    namespace = "com.example.chapter12"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.chapter11"
+        applicationId = "com.example.chapter12"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -55,4 +57,17 @@ dependencies {
     debugImplementation (libs.androidx.fragment.testing)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.fragment.ktx)
+
+    //Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    //Rooms
+    implementation (libs.androidx.room.common)
+    implementation (libs.androidx.room.ktx)
+
+    //KSP
+    ksp(libs.moshi.kotlin.codegen)
+    ksp(libs.androidx.room.compiler)
+
     }

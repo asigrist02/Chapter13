@@ -1,4 +1,4 @@
-package com.example.chapter11
+package com.example.chapter12
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.doOnTextChanged
-import com.example.chapter11.databinding.FragmentCrimeDetailBinding
+import com.example.chapter12.databinding.FragmentCrimeDetailBinding
 import java.util.Date
 import java.util.UUID
 

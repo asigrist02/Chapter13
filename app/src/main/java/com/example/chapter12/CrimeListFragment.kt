@@ -1,4 +1,4 @@
-package com.example.chapter11
+package com.example.chapter12
 
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.chapter11.databinding.FragmentCrimeListBinding
+import com.example.chapter12.databinding.FragmentCrimeListBinding
 
 private  const val TAG = "CrimeListFragment"
 
