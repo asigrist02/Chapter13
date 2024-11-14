@@ -1,10 +1,13 @@
 package com.example.chapter12
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.util.Date
 import java.util.UUID
 
+@Entity
 data class Crime(
-    val id:UUID,
+    @PrimaryKey val id:UUID,
     var title:String,
     val date:Date,
     var isSolved:Boolean,
