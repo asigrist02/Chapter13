@@ -1,7 +1,6 @@
-package com.example.chapter12.database
+package com.example.chapter13.database
 
 import androidx.room.TypeConverter
-import androidx.room.TypeConverters
 import java.util.Date
 
 class CrimeTypeConverters {
