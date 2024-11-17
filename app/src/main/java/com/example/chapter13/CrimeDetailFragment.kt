@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -16,6 +18,7 @@ import java.util.Date
 import java.util.UUID
 import kotlinx.coroutines.launch
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 
 //private const val TAG = "CrimeDetailFragment"
 
@@ -93,7 +96,18 @@ class CrimeDetailFragment :Fragment(){
                 }
             }
         }
-
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val crime = crimeDetailViewModel.crime.value // Access the current crime object from the ViewModel
+                if (crime?.title.isNullOrBlank()) {
+                    // Show a hint to the user
+                    Toast.makeText(requireContext(), "Please provide a title for the crime.", Toast.LENGTH_SHORT).show()
+                } else {
+                    // Navigate back
+                    findNavController().popBackStack()
+                }
+            }
+        })
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
